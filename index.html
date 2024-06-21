@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content=" HC odontología. tu salud bucal nos interesa">
     <meta name="keywords" content="Odontología, Tratamientos, Servicios Profesionales">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="./imagenes/favicon.ico">
 
@@ -14,11 +18,17 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- hoja de estilos -->
     <link rel="stylesheet" href="./css/estilos.css">
+    <script>
+        function redirectToWhatsApp(phoneNumber) {
+            const url = `https://wa.me/${phoneNumber}`;
+            window.open(url, '_blank');
+        }
+    </script>
 
     <title>HC Odontologia| Inicio</title>
 </head>
 
-<body>
+<body class="julius-sans-one-regular">
     <div class="containerBody">
         <header class="header">
             <nav class="navbar" style="background-color: #cac6a2;">
@@ -56,7 +66,8 @@
                     Odontología HC!
                 </h1>
                 <p>
-                    <span>Somos un equipo de profesionales altamente calificados y apasionados por la salud bucal.
+                    <span class="textoLanding ">Somos un equipo de profesionales altamente calificados y apasionados por
+                        la salud bucal.
                         Nuestra misión es mejorar la salud y la estética dental de nuestros pacientes a través de
                         tratamientos avanzados y personalizados. Con años de experiencia y formación continua,
                         estamos comprometidos a mantenernos al día con las últimas tecnologías y técnicas en
@@ -92,7 +103,6 @@
 
 
 
-
         <!-- footer -->
 
         <footer class="bg-dark text-white pt-4 footer1">
@@ -108,9 +118,8 @@
                     <div class="col-md-4">
                         <h5>Enlaces Rápidos</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Servicios profesionales</a></li>
-                            <li><a href="#" class="text-white">Obras Sociales</a></li>
-                            <li><a href="#" class="text-white">Contacto</a></li>
+                            <li><a href="./pages/servicios.html" class="text-white">Servicios profesionales</a></li>
+                            <li><a href="./pages/obrasSociales.html" class="text-white">Obras Sociales</a></li>
                         </ul>
                     </div>
                     <!-- Columna 3 -->
@@ -118,9 +127,17 @@
                         <h5>Contáctanos</h5>
                         <ul class="list-unstyled">
                             <li><i class="fas fa-map-marker-alt"></i> Dámaso Larrañaga 136, Nueva Cba.</li>
-                            <li><i class="fas fa-phone"></i> +549 3513 040 553</li>
+                            <li>
+                                <!-- <i class="fas fa-phone"></i> +549 3513 040 553 -->
+                                <button class="whatsapp-button" onclick="redirectToWhatsApp('5493513040553')">TURNOS</button>
+                            </li>
                             <li><i class="fas fa-envelope"></i> info@clinica.com</li>
                         </ul>
+                        <!-- <ul class="list-unstyled">
+                            <li><i class="fas fa-map-marker-alt"></i> Dámaso Larrañaga 136, Nueva Cba.</li>
+                            <li><i class="fas fa-phone"></i> +549 3513 040 553</li>
+                            <li><i class="fas fa-envelope"></i> info@clinica.com</li>
+                        </ul> -->
                     </div>
                 </div>
                 <div class="text-center py-3">
@@ -129,17 +146,17 @@
             </div>
         </footer>
 
-    </div>
 
 
 
 
 
-    <!-- dependencias de bootstrap -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        <!-- dependencias de bootstrap -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 </body>
 
 
